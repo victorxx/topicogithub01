@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Escolha um assunto e obtenha um link relacionado ao tópico.">
-    <meta name="keywords" content="tópicos, links, assuntos, seleção, resposta dinâmica">
+    <meta name="description" content="Escolha um tópico e obtenha um link relacionado, facilitando o acesso a conteúdos rápidos e informativos sobre diversos temas.">
+    <meta name="keywords" content="tópicos, links, resposta dinâmica, escolha de assunto, link para home, conteúdo online">
     <meta name="author" content="Seu Nome">
     <meta name="robots" content="index, follow">
-    <title>Escolha um Tópico</title>
+    <meta property="og:title" content="Escolha um Tópico - Links Relacionados">
+    <meta property="og:description" content="Selecione um tópico de interesse e receba um link relacionado a ele. Fácil, rápido e informativo!">
+    <meta property="og:image" content="URL_da_imagem_de_antevisao.jpg"> <!-- Se tiver uma imagem de preview -->
+    <meta property="og:url" content="URL_da_sua_pagina.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Escolha um Tópico - Links Relacionados">
+    <meta name="twitter:description" content="Selecione um tópico e obtenha um link rápido e relevante para o seu interesse.">
+    <meta name="twitter:image" content="URL_da_imagem_de_antevisao.jpg"> <!-- Imagem para o Twitter -->
+    <title>Escolha um Tópico - Links Rápidos</title>
 
     <!-- Estilos CSS Internos -->
     <style>
@@ -125,7 +133,7 @@
                 <select name="topic" id="topic" required>
                     <option value="">Selecione...</option>
                     <option value="inicio">VOLTAR PARA HOME</option>
-
+                    <option value="1">Melhores momentos de rica games</option>
                 </select>
 
                 <button type="submit">Obter Link</button>
@@ -140,7 +148,7 @@
     </section>
 
     <footer>
-        <p>©  Seu Nome. Todos os direitos reservados.</p>
+        <p>© Seu Nome. Todos os direitos reservados.</p>
         <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
     </footer>
 
@@ -163,6 +171,9 @@
 
             // ESCOLHENDO O LINK BASEADO NO TÓPICO
             switch(topic) {
+                case '1':
+                    link='https://www.youtube.com/watch?v=2YOh5l8Ou-g&feature=youtu.be';
+                    break;
                 case 'inicio':
                     link='index.html';
                     break;
