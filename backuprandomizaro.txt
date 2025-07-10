@@ -12,7 +12,8 @@
             const links=[
                 'index.html',
                 '2.html',
-                '3.html'
+                '3.html',
+                '4.html'
             ];
             const escolher=links[Math.floor(Math.random()*links.length)];
            window.location.href=escolher;
