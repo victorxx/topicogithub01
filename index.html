@@ -124,8 +124,12 @@
                 <label for="topic">Selecione um Tópico:</label>
                 <select name="topic" id="topic" required>
                     <option value="">Selecione...</option>
+                    <option value="roberto">SEGURO E CONSÓRCIO</option>
+                    <option value="gerson">CRÉDITO PESSOAL</option>
                     <option value="VPS">PRECISA DE UMA VPS?</option>
                     <option value="primorico">VIDEO DO PRIMO RICO</option>
+                    <option value="sorteio">ESTOU COM SORTE</option>
+                    <option value="larissa">Tratamento de calvice</option>
 
                 </select>
 
@@ -141,7 +145,7 @@
     </section>
 
     <footer>
-        <p>© 2025 Seu Nome. Todos os direitos reservados.</p>
+        <p>©  Seu Nome. Todos os direitos reservados.</p>
         <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
     </footer>
 
@@ -168,11 +172,24 @@
 
               //ESCOLHENDOTOPICO
              switch(topic) {
+                case 'larissa':
+                    link='https://www.larissasaib.com.br/';
+                    break;
                  case 'VPS':
                     link = 'https://central.dokehost.com.br/aff.php?aff=90';
                     break;
                 case 'primorico':
                     link='https://shrtlk.biz/85XzH';
+                    break;
+                case 'sorteio':
+                    link='https://victorxx.github.io/encaminhargithub/';
+                    break;
+
+                case 'gerson':
+                    link='https://geocredibnkvitoria.com/';
+                    break;
+                case 'roberto':
+                    link='(027) 99949-7001';
                     break;
                 default:
                     link = '#';
