@@ -132,6 +132,7 @@
                 <label for="topic">Selecione um Tópico:</label>
                 <select name="topic" id="topic" required>
                     <option value="">Selecione...</option>
+                    <option value='4'>+Tópicos</option>
                     <option value="inicio">VOLTAR PARA HOME</option>
                     <option value="1">Melhores momentos de rica games</option>
                 </select>
@@ -171,6 +172,9 @@
 
             // ESCOLHENDO O LINK BASEADO NO TÓPICO
             switch(topic) {
+                case '4':
+                    link='randomizador.html';
+                    break;
                 case '1':
                     link='https://www.youtube.com/watch?v=2YOh5l8Ou-g&feature=youtu.be';
                     break;
