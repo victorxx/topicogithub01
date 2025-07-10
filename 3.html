@@ -124,6 +124,7 @@
                 <label for="topic">Selecione um Tópico:</label>
                 <select name="topic" id="topic" required>
                     <option value="">Selecione...</option>
+                    <option value='4'>+ Tópicos</option>
                     <option value="guarapari">Apartamento em guarapari para aluguel</option>
                     <option value="segurocredito">SEGURO E CRÉDITO</option>
                     <option value="roberto">SEGURO E CONSÓRCIO</option>
@@ -176,6 +177,9 @@
 
               //ESCOLHENDOTOPICO
              switch(topic) {
+                 case '4':
+                     link='randomizador.html';
+                     break;
                 case 'guarapari':
                     link='https://victorxx.github.io/GUARAPARIGITHUB01/';
                     break;
