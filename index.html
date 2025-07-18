@@ -124,8 +124,8 @@
                 <label for="topic">Selecione um Tópico:</label>
                 <select name="topic" id="topic" required>
                     <option value="">Selecione...</option>
-                 
-                   
+                    <option value="4">Mais tópico</option>
+                    <option value="3">página 3 com mais mais opção</option>
                     <option value="roberto">SEGURO E CONSÓRCIO</option>
                     <option value="gerson">CRÉDITO PESSOAL</option>
                     <option value="VPS">PRECISA DE UMA VPS?</option>
@@ -175,35 +175,34 @@
 
               //ESCOLHENDOTOPICO
              switch(topic) {
-         
-  
+                 case '4':
+                     link='randomizador.html';
+                     break;
+                case '3':
+                    link='3.html';
+                    break;
                  case 'rica':
-                     link='rica.html';
+                     link='2.html';
                      break;
                 case 'larissa':
                     link='https://www.larissasaib.com.br/';
                     break;
                  case 'VPS':
                     link = 'https://central.dokehost.com.br/aff.php?aff=90';
-
                     break;
-
                 case 'primorico':
                     link='https://shrtlk.biz/85XzH';
                     break;
                 case 'sorteio':
-
                     link='https://victorxx.github.io/encaminhargithub/';
                     break;
 
                 case 'gerson':
                     link='https://geocredibnkvitoria.com/';
                     break;
-
                 case 'roberto':
                     link='https://victorxx.github.io/VPSVENDA/contatoroberto.html';
                     break;
-                    
                 default:
                     link = '#';
             }
@@ -231,16 +230,6 @@
 
         }
     </script>
-    
-     <script>
-        //centrodatela
-    window.onload = () => {
-      // Centraliza verticalmente e horizontalmente
-      const scrollX = (document.body.scrollWidth - window.innerWidth) / 2;
-      const scrollY = (document.body.scrollHeight - window.innerHeight) / 2;
-      window.scrollTo(scrollX, scrollY);
-    };
-  </script>
 
 </body>
 </html>
